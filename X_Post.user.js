@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        X Post
 // @namespace        http://tampermonkey.net/
-// @version        0.4
+// @version        0.5
 // @description        オリジナルの「Xポスト」ボタンの設置
 // @author        Ameba Blog User
 // @match        https://ameblo.jp/*
@@ -21,7 +21,8 @@ main();
 
 function main(){
     let user;
-    let user_p=document.querySelector('._w6MHwCAy');
+    let user_p=document.querySelector('._2j4IoOdR');
+
     if(user_p){
         user=user_p.textContent; }
 
